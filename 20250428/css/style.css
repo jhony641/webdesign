@@ -1,0 +1,13 @@
+body { background: brown;}
+header { border: 25px dashed; color:goldenrod;background: rgb(122, 136, 100);}
+main {border: 25px solid; color: blueviolet;background: blue;}
+footer {border: 25px dotted; color: rgb(238, 255, 0);background: darkgoldenrod;}
+h1 {color: rgb(160, 59, 255);}
+p {color: rgb(81, 255, 0);}
+#ensayo {
+    font-size: 20px;
+    font-weight: bold;
+}
+.shakira {
+  color: chartreuse;  
+}
