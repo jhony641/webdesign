@@ -1,0 +1,42 @@
+body {
+    border:red 5px dashed;
+    padding: 1rem;
+}
+
+header {
+    border: blue 5px solid;
+    padding: 1rem;
+}
+
+nav {
+    border: 1px darkblue solid;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 1rem;
+}
+
+main {
+    border: green 5px dotted;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+footer {
+    background: rgb(0, 0, 0);
+    color: white;
+    border: 1px orangered solid;
+}
+
+p {text-align: justify;}
