@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {background: greenyellow; padding: 1rem;}
+
+section, article {
+    border: solid 3px blue;
+}
+
+section {
+    display: flex;
+    background: purple;
+}
+
+article {
+    background: yellow;
+    flex-grow: 1;
+    height: 100px;
+    font-size: 3rem;
+    color: aqua;
+    margin: 1rem;
+    align-content: center;
+    text-align: center;
+}
+
+
+.order6 { order: 2;}
+.order1menos {order: -1;}
