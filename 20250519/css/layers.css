@@ -1,0 +1,89 @@
+* { box-sizing: border-box; margin: 0; padding: 0;}
+
+main { background: greenyellow; padding: 1rem;}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 120px);
+    background-color: beige;
+}
+
+article { border-radius: 1rem; margin: 1rem;}
+
+#uno {
+    background: rebeccapurple;
+    grid-area: 1 / 1 / 3 / 3;
+    z-index: 2;
+}
+
+#dos {
+    background: yellow;
+    grid-area: 2 / 2 / 4 / 4;
+    z-index: 1;
+}
+
+#tres {
+    background: green;
+    grid-area: 3 / 3 / 5 / -1;
+    z-index: 0;
+}
+
+#cuatro {
+    background: plum;
+    grid-area: 1 / 1 / -1 / -1;
+    margin: 3rem;
+    z-index: 4;
+}
+
+#hero {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 120px);
+}
+
+#yes {
+    background: rgb(16, 96, 150);
+    grid-area: 1 / 1 / -1 / -1;
+    z-index: 0;
+}
+
+#no {
+    grid-area: -4 / -4 / 4 / 5;
+    z-index: 0;
+    padding: 1rem;
+    width: 600px;
+    border-radius: 1rem;
+}
+#ok {
+    background: red;
+    grid-area: 2 / 3 / -3 / 3;
+    z-index: 1;
+    padding: 1rem;
+    width: 300px;
+    
+}
+
+#nou{
+    background: orangered;
+    grid-area: 3 / 2 / -1 / -2;
+    z-index: 1;
+    height: 150px;
+}
+
+p{
+    padding: 1rem;
+    margin: 1rem;
+}
+h2{
+    color: blanchedalmond;
+}
+#yea {
+    background: olive;
+    grid-area: 4 / 4 / -2/ -1 ;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+}
+a {
+    text-decoration: none;
+}
