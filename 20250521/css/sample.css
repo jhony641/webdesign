@@ -1,0 +1,78 @@
+*{box-sizing: border-box; margin: 0; padding: 0;}
+
+header {
+    background: cadetblue;
+    color: white;
+}
+main {
+    border: blue 3rem solid;
+    background: cyan;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    padding: 2rem;
+}
+
+section {
+    display: grid;
+    border: rgb(0, 0, 0) solid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    padding: 6px;
+    background: burlywood;
+    margin: 2px;
+    width: 450px;
+    height: 300px;
+    gap: 10px;
+
+}
+
+article {
+    border: rgb(0, 0, 0) solid;
+    width: 50px; 
+    height: 50px; 
+    background: lightskyblue; 
+    border-radius: 10px ;
+
+}
+
+.sect_1 {
+    justify-items: start;
+}
+
+.sect_2 {
+    justify-items: end;
+}
+
+.sect_3 {
+    justify-items: center;
+}
+
+.sect_4 {
+    align-items: start;
+}
+
+.sect_5 {
+    align-items: end;
+}
+
+.sect_6 {
+    align-items: center;
+}
+
+.sect_7 {
+    justify-items: stretch;
+}
+
+.sect_8 {
+    align-items: stretch;
+}
+
+.sect_1 article { height: unset;}
+.sect_2 article { height: unset;}
+.sect_3 article { height: unset;}
+.sect_4 article { width: unset;}
+.sect_5 article { width: unset;}
+.sect_6 article { width: unset;}
+.sect_7 article { width: unset; height: unset;}
+.sect_8 article { width: unset; height: unset;}

@@ -1,0 +1,53 @@
+* { box-sizing: border-box; margin: 0; padding: 0;}
+
+main {
+    background: rgb(255, 206, 47);
+    padding: 2rem;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 2rem 1fr 150px 150px 200px 100px 40px 4rem;
+    grid-template-rows: 2rem 1rem 100px 78px 140px 1rem 2rem;
+    border: solid 3px red;
+    background: white;
+}
+
+ #hero img {
+    grid-area: 2 / 3 / -2 / -2 ;
+    gap: 100%;
+}
+
+ #hero article {
+    grid-area: 1 / 1 / -1 / -1;
+    border: solid rgb(0, 119, 128) ;
+    border-radius: 1rem;
+    background: olive;
+}
+
+ #hero h2 {
+    grid-area: 3 / 2 / 4 / 4;
+    background: rgba(139, 0, 0, 0.5); z-index: 2; text-align: center;
+    color: white; padding: 2rem; font-size: xx-large;
+    border-radius: 2rem; font-weight: 900;
+}
+
+#hero p {
+    grid-area: 5 / 2 / 6 / 5;
+    background: rgba(172, 255, 47, 0.267);
+    z-index: 2; border-radius: 2rem; padding: 2rem; font-size: 1.3rem;
+    color: white;
+}
+
+#hero a {
+    grid-area: 5 / -4 / 6 / -3;
+    text-decoration: none;
+    color: white;
+    background: rgba(0, 139, 42, 0.39);
+    border-radius: 1rem;
+    height: 45px;
+    padding: 1rem;
+    align-self: end;
+}
+
+#hero a:hover { background: rgba(255, 255, 0, 0.404); color: rgb(255, 0, 64);}
