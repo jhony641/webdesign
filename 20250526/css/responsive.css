@@ -1,0 +1,30 @@
+main {
+    background: chartreuse;
+    width: 1000px;
+    border: red 3px solid;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 800px ) {
+    main {
+        background: green;
+        border: orangered dotted;
+        font-size: 1.2rem;
+        color: white;
+        width: 650px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    main {
+        background: yellow;
+        border: dashed darkblue;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 0.5rem;
+        width: unset;
+        margin: unset;
+        color: black;
+    }
+}
