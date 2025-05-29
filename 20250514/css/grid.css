@@ -3,6 +3,32 @@
     margin: 0;
     padding: 0;
 }
+header {background: cyan;}
+header h1 { align-self: center;}
+
+nav {
+    grid-column: 1 / -1;
+    border: dotted rgb(0, 89, 255);
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr repeat(5,190px) 1fr;
+    list-style: none;
+}
+
+nav a {
+    display: grid;
+    border: solid blue;
+    text-decoration: none;
+    text-align: center;
+    padding: .5rem 1rem;
+}
+
+nav a:hover {
+    background: darkred;
+    color: white;
+}
 
 section {
     display: grid;
@@ -53,4 +79,8 @@ grid-row: 4/5;
 #a_cuatro {
     grid-column: 1/2;
     grid-row: 4/5;
+}
+footer{background: burlywood;
+    height: 50px;
+    font-size: 1rem;
 }

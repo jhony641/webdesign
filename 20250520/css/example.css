@@ -4,6 +4,35 @@ main {
     background: rgb(255, 206, 47);
     padding: 2rem;
 }
+header{background: cyan;}
+header img { width: 200px;
+justify-self: center;
+align-self: center;}
+header h1 { align-self: center; }
+
+nav {
+    grid-column: 1 / -1;
+    border: dotted rgb(0, 89, 255);
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr repeat(5,190px) 1fr;
+    list-style: none;
+}
+
+nav a {
+    display: grid;
+    border: solid blue;
+    text-decoration: none;
+    text-align: center;
+    padding: .5rem 1rem;
+}
+
+nav a:hover {
+    background: darkred;
+    color: white;
+}
 
 #hero {
     display: grid;
@@ -51,3 +80,8 @@ main {
 }
 
 #hero a:hover { background: rgba(255, 255, 0, 0.404); color: rgb(255, 0, 64);}
+
+footer{background: cadetblue;
+    height: 50px;
+    font-size: 1rem;
+}

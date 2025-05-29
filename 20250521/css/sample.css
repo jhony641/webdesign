@@ -4,6 +4,36 @@ header {
     background: cadetblue;
     color: white;
 }
+
+header img { width: 200px;
+justify-self: center;
+align-self: center;}
+header h1 { align-self: center; }
+
+nav {
+    grid-column: 1 / -1;
+    border: dotted rgb(0, 89, 255);
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr repeat(5,190px) 1fr;
+    list-style: none;
+}
+
+nav a {
+    display: grid;
+    border: solid blue;
+    text-decoration: none;
+    text-align: center;
+    padding: .5rem 1rem;
+}
+
+nav a:hover {
+    background: darkred;
+    color: white;
+}
+
 main {
     border: blue 3rem solid;
     background: cyan;
@@ -76,3 +106,8 @@ article {
 .sect_6 article { width: unset;}
 .sect_7 article { width: unset; height: unset;}
 .sect_8 article { width: unset; height: unset;}
+
+footer {background: cornflowerblue;
+    height: 50px;
+    font-size: 1rem;
+}
