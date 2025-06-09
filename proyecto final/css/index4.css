@@ -7,7 +7,7 @@ body {
 
 header {
     background:#0f0f0f;
-    background-image: url(../../images1/sportsoul.jpg!w700wp);
+    background-image: url(../../images/sportsoul.jpg!w700wp);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,43 +46,6 @@ nav a:hover {
     color: rgb(100, 10, 10);
 }
 
-main { 
-    padding: 100px 0;
-    display: flex;
-    align-items: center;
-}
-main a{
-    border: none;
-    transition: transform 0.2s;
-}
-main a:hover {
-    transform: scale(1.1);
-    position: relative;
-    opacity: 0.8;   
-}
-
-
-section {
-    padding: 1rem;
-}
-section h2 {
-    font-size: 40px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: 25px;
-}
-
-section p {
-    font-size: 16px;
-    color: #818181;
-    margin-bottom: 35px;
-    text-align: start;
-}
-
-article img {
-    width: 80%;
-}
 
 
 
@@ -95,7 +58,47 @@ footer {
     text-align: center;
 }
 
+.conter {
+    display: flex;
+    
+}
+aside {
+    
+    width: 400px;
+    box-sizing: border-box; 
+    background: rgba(14, 28, 46, 0.336);
+    margin: 0;
+    background-attachment: fixed; 
+    
+}
+aside img {
+    display: block;
+    margin: auto;
+}
+main {
+    
+    padding: 1rem;
+}
 
+.noticia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+.p {
+    flex: 1;
+    color: white;
+    
+}
+.noticia p,h2 {
+    margin-bottom: 2rem;
+}
+.noticia img {
+    margin-left: 20px;
+    width: 250px;
+    height: 250px;
+}
 
 
 article {
@@ -149,46 +152,4 @@ grid-row: 1 / -1; grid-column: -2 / -1;
     font-size: 22px;
     text-transform: capitalize;
     margin-bottom: 35px;
-}
-
-#uno {
-   display: flex;
-   justify-content: space-between;
-   
-}
-
-
-
-#dos {
-   display: flex;
-   justify-content: space-between;
-}
-
-.tex {
-    width: 25%;
-    margin: 10px;
-    text-align: center;
-    background: #2e1111;
-}
-.tex img{
-    width: 100%;
-    height: auto;
-}
-.tex h2 {
-    font-size: 16px;
-    margin-top: 10px;
-}
-.tex2 {
-    width: 25%;
-    margin: 10px;
-    text-align: center;
-    background: #2e1111;
-}
-.tex2 img{
-    width: 100%;
-    height: auto;
-}
-.tex2 h2 {
-    font-size: 16px;
-    margin-top: 10px;
 }

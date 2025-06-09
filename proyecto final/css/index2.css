@@ -7,7 +7,7 @@ body {
 
 header {
     background:#0f0f0f;
-    background-image: url(../../images1/sportsoul.jpg!w700wp);
+    background-image: url(../../images/sportsoul.jpg!w700wp);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,20 +47,16 @@ nav a:hover {
 }
 
 main { 
-    padding: 100px 0;
+    width: 100%;
+    max-width: 1300px; 
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 30px; 
+    padding: 20px;
+    box-sizing: border-box;
+    
 }
 
-main a{
-    border: none;
-    transition: transform 0.2s;
-}
-main a:hover {
-    transform: scale(1.1);
-    position: relative;
-    opacity: 0.8;   
-}
 
 section {
     padding: 1rem;
@@ -147,44 +143,126 @@ grid-row: 1 / -1; grid-column: -2 / -1;
     margin-bottom: 35px;
 }
 
-#uno {
-   display: flex;
-   justify-content: space-between;
-   
+
+
+.uno {
+    display: flex;
+    gap: 30px;
+    background-color: #262626; 
+    padding: 30px;
+    border-radius: 5px; 
 }
 
-
-
-#dos {
-   display: flex;
-   justify-content: space-between;
+.dos {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
 }
 
-.tex {
-    width: 25%;
-    margin: 10px;
-    text-align: center;
-    background: #2e1111;
+.dos h1 {
+    font-size: 40px; 
+    line-height: 4rem;
+    margin: 20px;
+    color: #e0e0e0;
+    font-weight: bold;
+    letter-spacing: -1px; 
 }
-.tex img{
+
+.dos p {
+    font-size: 20px;
+    line-height: 2rem;
+    color: #b0b0b0;
+    margin-bottom: 5px;
+}
+
+.tres {
+    width: 100%; 
+    max-width: 300px; 
+    height: 120px; 
+    background-color: #3a3a3a; 
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.tres img {
     width: 100%;
-    height: auto;
+    height: 160%;
+    object-fit: cover; 
 }
-.tex h2 {
-    font-size: 16px;
-    margin-top: 10px;
+
+
+
+.cuatro {
+    display: block;
+    flex: 1; 
+    background-color: #3a3a3a; 
+    overflow: hidden;
 }
-.tex2 {
-    width: 25%;
-    margin: 10px;
-    text-align: center;
-    background: #2e1111;
-}
-.tex2 img{
+
+.cuatro img {
     width: 100%;
-    height: auto;
+    height: 50%;
+    display: block;
+    margin-bottom: 5px;
 }
-.tex2 h2 {
-    font-size: 16px;
-    margin-top: 10px;
+
+
+.new-arrivals-section {
+    background-color: #262626; 
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.new-arrivals-section h2 {
+    font-size: 2em;
+    line-height: 1.1;
+    margin: 0 0 15px 0;
+    color: #e0e0e0;
+    font-weight: bold;
+}
+
+.arrival-navigation {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.nav-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-dot.active {
+    background-color: #e0e0e0;
+}
+
+.arrivals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px;
+}
+
+.arrival-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.arrival-item img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    background-color: #3a3a3a; 
+    margin-bottom: 10px;
+}
+
+.arrival-item p {
+    font-size: 0.85em;
+    color: #b0b0b0;
+    margin: 0;
 }
