@@ -74,6 +74,7 @@ aside {
 aside img {
     display: block;
     margin: auto;
+    padding: 2rem;
 }
 main {
     
